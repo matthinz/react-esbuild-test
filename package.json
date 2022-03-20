@@ -4,9 +4,10 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "build": "esbuild --bundle --outdir=public/js src/index.tsx",
+    "build": "esbuild --bundle --outdir=public/assets src/index.tsx",
     "build:prod": "yarn build --minify --sourcemap",
     "dev": "nf start",
+    "start": "serve public",
     "test": "jest"
   },
   "devDependencies": {
@@ -16,6 +17,7 @@
     "@types/react-test-renderer": "^17.0.1",
     "esbuild": "^0.14.27",
     "foreman": "^3.0.1",
+    "identity-obj-proxy": "^3.0.0",
     "jest": "^27.5.1",
     "prettier": "2.6.0",
     "react-test-renderer": "^17.0.2",
